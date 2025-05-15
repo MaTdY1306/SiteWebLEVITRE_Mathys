@@ -1,0 +1,67 @@
+:root {
+    --white : #fff;
+    --colorText : #000000;
+    --colorNav : #f5f5dc;
+    --colorFont : f5f5dc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    background: var(--colorFont);
+}
+
+
+/* MENU NAVIGATION */
+
+
+.nav {
+    padding: 20px;
+    display: flex;
+    list-style: none;
+    background: var(--colorNav);
+    box-shadow: rgba(100, 100, 111, .3) 0px 7px 29px 0px;
+    right: 0;
+}
+
+
+.nav_links {
+    border-radius: 25px;
+}
+
+.nav_bar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.nav a {
+    color: var(--colorText);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.contacter {
+    background: var(--white);
+    transition: all .3s ease;
+}
+
+.contacter:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.image_wrapper img {
+    height: 350px;
+    transition: all 1s;
+}
+.image_wrapper img:hover {
+    filter: drop-shadow(5px 0 2px rgba(0, 0, 0, .4));
+    height: 400px;
+}
