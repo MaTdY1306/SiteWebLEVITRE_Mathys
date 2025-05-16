@@ -1,0 +1,75 @@
+:root {
+    --red : #ff2200;
+    --blue : #0000ff;
+    --white : #fff;
+    --grey : #eceaf0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    background: var(--grey);
+}
+
+form {
+    border-radius: .75rem;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+    gap: 10px;
+    background: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.nom_prenom {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nom_prenom input {
+    width: calc(50% - 10px);
+    margin-right: 20px;
+}
+
+.nom_prenom input:last-child {
+    margin-right: 0;
+}
+
+textarea {
+    height: 90px;
+    width: auto;
+    resize: none;
+}
+
+p {
+    color: var(--red);
+    text-shadow: 2px 2px 4px white;
+}
+
+button {
+    border: none;
+    border-radius: 25px;
+    height: 30px;
+    width: max-content;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    background: var(--blue);
+    color: var(--white);
+}
+
+.novalide {
+    border: var(--red) solid 1px;
+}
+
+.novalide::placeholder {
+    color: var(--red);
+}
