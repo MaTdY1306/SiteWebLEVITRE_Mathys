@@ -1,0 +1,21 @@
+:root{
+    --white : #fff;
+    --colorText : #000000;
+    --colorNav : #d9d2c7;
+    --colorFont : f5f5dc;
+    --colorFooter : #262724;
+    --colorTextNavHover : #2C3E50;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+
+@media only screen 
+and (min-device-width : 0px)
+and (max-device-width : 600px)
+and (orientation : portrait) {
+
+
+}
