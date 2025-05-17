@@ -2,9 +2,18 @@
     --white : #fff;
     --colorText : #000000;
     --colorNav : #d9d2c7;
-    --colorFont : f5f5dc;
+    --colorFont : #f5f5dc;
     --colorFooter : #262724;
     --colorTextNavHover : #2C3E50;
+}
+
+.darkSide {
+    --white: #121212;               /* fond très sombre mais pas noir pur */
+    --colorText: #eaeaea;           /* texte presque blanc pour contraste doux */
+    --colorNav: #1f1f1f;            /* navigation plus foncée, neutre et discrète */
+    --colorFont: #c8c0a6;           /* beige/gris chaud adouci pour les textes secondaires */
+    --colorFooter: #0d0d0d;         /* footer très foncé pour hiérarchie visuelle */
+    --colorTextNavHover: #8ab4f8;   /* bleu doux pour survol, style Material Dark */
 }
 
 * {
@@ -31,8 +40,6 @@ body {
 }
 
 
-
-
 .nav_links {
     border-radius: 25px;
     position : relative;
@@ -48,6 +55,23 @@ body {
     display: flex;
     justify-content: flex-end;
     gap: 40px;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.nav_bar button img {
+    background: none;
+    padding: 0;
+    margin: 0;
+    height: 44px;
+    transition: all .3s ease;
+}
+.nav_bar button img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 4px 8px);
 }
 
 .boutons_nav::after {
@@ -68,18 +92,6 @@ body {
 .boutons_nav:hover {
   color: var(--colorTextNavHover); /* facultatif : change aussi la couleur du texte */
 }
-
-.contacter {
-    background: var(--white);
-    transition: all .3s ease;
-}
-
-.contacter:hover {
-    transform: scale(1.1);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-
 
 
 footer {
@@ -159,9 +171,11 @@ footer .logo_reseaux img:hover {
 
 /* Boutons */
 .nav_links {
-  text-decoration: none;
-  color: var(--colorText);
-  padding: 8px 12px;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--colorText);
+    padding: 8px 12px;
+    margin: 0;
 }
 
 .boutons_nav::after {
@@ -199,7 +213,6 @@ footer .logo_reseaux img:hover {
   transform: scale(1.1);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 8px;
 }
-
 
 @media only screen 
 and (min-device-width : 0px)
