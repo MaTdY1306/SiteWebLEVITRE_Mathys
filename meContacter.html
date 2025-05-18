@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/style_menu.css">
-        <link rel="stylesheet" href="./assets/style_form.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style_menu.css">
+    <link rel="stylesheet" href="./assets/style_form.css">
+
+    <script src="./js/JQuery.js"></script>
+    <script src="./js/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <title>LEVITRE Mathys</title>
+</head>
 
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<body>
 
-        <title>LEVITRE Mathys</title>
-    </head>
+    <nav class="nav">
+        <!-- Menu mobile -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
 
-
-    <body>
-
-        <nav class="nav">
-            <!-- Menu toggle -->
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="hamburger">&#9776;</label>
-
-            <!-- Tous les liens dans nav_bar -->
-            <div class="nav_bar">
-                <a href="./index.html" class="nav_links boutons_nav">Accueil</a>
-                <a href="./moi.html" class="nav_links boutons_nav">Qui suis-je ?</a>
-                <a href="#" class="nav_links boutons_nav">Mes projets</a>
-                <a href="./meContacter.html" class="nav_links contacter">Me contacter</a>
-            </div>
-        </nav>
+        <!-- Liens de navigation -->
+        <div class="nav_bar">
+            <a href="./index.html" class="nav_links"><img src="./assets/img/Logo Tech Informatique Simple Moderne Professionnel Noir et Blanc.png" alt="Logo" class="logo"></a>
+            <a href="./index.html" class="nav_links boutons_nav">Accueil</a>
+            <a href="./moi.html" class="nav_links boutons_nav">Qui suis-je ?</a>
+            <a href="#" class="nav_links boutons_nav">Mes projets</a>
+            <a href="./meContacter.html" class="nav_links contacter">Me contacter</a>
+            <button class="btnDarkSide"><img src="./assets/img/mobile-apps-website-screen-brightness-260nw-2283103921(1).png" alt="Dark mode toggle"></button>
+        </div>
+    </nav>
 
             <form action="" novalidate>
 
@@ -48,12 +52,8 @@
 
                     <p>* : Renseignement obligatoire</p>
             </form>
-
-
-
-        
+    
         <footer>
-
             <div class="reseaux">
                 <a href="https://www.linkedin.com/in/mathys-levitre-17b4212a5/" class="logo_reseaux" target="_blank"><img src="./assets/img/footer/linkedin.png" alt=""></a>
                 <a href="" class="logo_reseaux" target="_blank"><img src="./assets/img/footer/indeed.jpg" alt=""></a>

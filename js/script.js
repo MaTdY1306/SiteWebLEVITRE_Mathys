@@ -8,4 +8,8 @@ $(document).ready(function() {
             $(".btnDarkSide").html("<img src='./assets/img/mobile-apps-website-screen-brightness-260nw-2283103921(1).png' alt='Dark mode toggle'>")
         }
     })
+
+    $('.toggle').click(function () {
+        $('.nav_links_responsive').slideToggle(300);
+    });
 })
