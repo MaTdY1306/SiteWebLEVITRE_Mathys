@@ -7,6 +7,26 @@
     --colorTextNavHover : #2C3E50;
 }
 
+.dark-mode {
+    --white: #f0f0f0;
+    --colorText: #e0e0e0;
+    --colorNav: #1f1f1f;
+    --colorFont: #cccccc;
+    --colorFooter: #121212;
+    --colorTextNavHover: #4fc3f7;
+    --backgroundMain: #181818;
+    --cardBackground: #242424;
+    --accent: #64ffda;
+}
+
+.principal, .presentation, .ligneTemporelle .event {
+    background-color: var(--cardBackground);
+    color: var(--colorText);
+}
+
+body {
+    background-color: var(--backgroundMain);
+}
 
 .premiereVue {
     display: flex;
@@ -89,4 +109,4 @@
     border: 50px solid black;
     width: 0;
     height: 0;
-} */
+}*/ 

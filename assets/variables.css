@@ -7,11 +7,14 @@
     --colorTextNavHover : #2C3E50;
 }
 
-.darkSide {
-    --white: #121212;               /* fond très sombre mais pas noir pur */
-    --colorText: #eaeaea;           /* texte presque blanc pour contraste doux */
-    --colorNav: #1f1f1f;            /* navigation plus foncée, neutre et discrète */
-    --colorFont: #c8c0a6;           /* beige/gris chaud adouci pour les textes secondaires */
-    --colorFooter: #0d0d0d;         /* footer très foncé pour hiérarchie visuelle */
-    --colorTextNavHover: #8ab4f8;   /* bleu doux pour survol, style Material Dark */
+.dark-mode {
+    --white: #f0f0f0;
+    --colorText: #e0e0e0;
+    --colorNav: #1f1f1f;
+    --colorFont: #cccccc;
+    --colorFooter: #121212;
+    --colorTextNavHover: #4fc3f7;
+    --backgroundMain: #181818;
+    --cardBackground: #242424;
+    --accent: #64ffda;
 }
