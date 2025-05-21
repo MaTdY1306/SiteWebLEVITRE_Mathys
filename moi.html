@@ -1,41 +1,49 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/style_menu.css">
-        <link rel="stylesheet" href="./assets/style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/variables.css">
+    <link rel="stylesheet" href="./assets/style_menu.css">
+    <link rel="stylesheet" href="./assets/style.css">
 
-        <script src="./js/JQuery.js"></script>
-        <script src="./js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/script.js"></script>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
-        <title>LEVITRE Mathys</title>
-    </head>
+    <title>LEVITRE Mathys</title>
+
+</head>
 
 
-    <body>
+<body>
+    <header>
 
         <nav class="nav">
-            <!-- Menu mobile -->
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="hamburger">&#9776;</label>
-
-            <!-- Liens de navigation -->
-            <div class="nav_bar">
-                <a href="./index.html" class="nav_links"><img src="./assets/img/Logo Tech Informatique Simple Moderne Professionnel Noir et Blanc.png" alt="Logo" class="logo"></a>
-                <a href="./index.html" class="nav_links boutons_nav">Accueil</a>
-                <a href="./moi.html" class="nav_links boutons_nav">Qui suis-je ?</a>
-                <a href="#" class="nav_links boutons_nav">Mes projets</a>
-                <a href="./meContacter.html" class="nav_links contacter">Me contacter</a>
-                <button class="btnDarkSide"><img src="./assets/img/mobile-apps-website-screen-brightness-260nw-2283103921(1).png" alt="Dark mode toggle"></button>
-            </div>
+            
+            <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <ul class="nav_bar nav_bar1">
+                <li class="nav_links"><a href="./index.html"><img src="./assets/img/Logo Tech Informatique Simple Moderne Professionnel Noir et Blanc.png" alt="Logo" class="logo"></a></li>
+                <li class="nav_links link_other_page"><a href="./index.html">Accueil</a></li>
+                <li class="nav_links link_other_page"><a href="./moi.html">Qui suis-je ?</a></li>
+                <li class="nav_links link_other_page"><a href="">Mes projets</a></li>
+                
+            </ul>
+            
+            <ul class="nav_bar nav_bar2">
+                <!--    <li class="nav_links contact"><a href="./meContacter.html">Me contacter</a></li>-->
+                <li class="nav_links"><button class="btnDarkSide"><img src="./assets/img/mobile-apps-website-screen-brightness-260nw-2283103921(1).png" alt="Dark mode toggle"></button></li>
+            </ul>
         </nav>
-
-
+    </header>
 
         <a href="./assets/img/CV_LEVITRE_Mathys.pdf" download><button>Télécharger mon CV</button></a>
 
@@ -50,17 +58,28 @@
 
 
     
-        <footer>
+      <footer>
+
+        <div class="footerContacts">
+            <h2>Contacts</h2>
+            <ul class="contacts">
+                <li class="contact"><a href="tel:+33652977022">Tél : 06.52.97.70.22</a></li>
+                <li class="contact">Mail : levitre.mathys30@gmail.com</li>
+                <li><a href="./meContacter.html" class="contact">Remplir le formulaire</a></li>
+            </ul>
 
             <div class="reseaux">
-                <a href="https://www.linkedin.com/in/mathys-levitre-17b4212a5/" class="logo_reseaux" target="_blank"><img src="./assets/img/footer/linkedin.png" alt=""></a>
-                <a href="" class="logo_reseaux" target="_blank"><img src="./assets/img/footer/indeed.jpg" alt=""></a>
-                <a href="https://github.com/MaTdY1306" class="logo_reseaux" target="_blank"><img src="./assets/img/footer/github.png" alt=""></a>
-            </div>
+            <a href="https://www.linkedin.com/in/mathys-levitre-17b4212a5/" class="logo_reseaux" target="_blank"><img src="./assets/img/footer/linkedin.png" alt=""></a>
+            <a href="" class="logo_reseaux" target="_blank"><img src="./assets/img/footer/indeed.jpg" alt=""></a>
+            <a href="https://github.com/MaTdY1306" class="logo_reseaux" target="_blank"><img src="./assets/img/footer/github.png" alt=""></a>
+        </div>
+        </div>
 
-            
-        </footer>
+        
+
+        
+    </footer>
 
 
-    </body>
+</body>
 </html>

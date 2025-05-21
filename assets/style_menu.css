@@ -1,22 +1,3 @@
-:root{
-    --white : #fff;
-    --colorText : #000000;
-    --colorNav : #d9d2c7;
-    --colorFont : f5f5dc;
-    --colorFooter : #262724;
-    --colorTextNavHover : #2C3E50;
-}
-
-
-.darkSide {
-    --white: #121212;               /* fond très sombre mais pas noir pur */
-    --colorText: #eaeaea;           /* texte presque blanc pour contraste doux */
-    --colorNav: #1f1f1f;            /* navigation plus foncée, neutre et discrète */
-    --colorFont: #c8c0a6;           /* beige/gris chaud adouci pour les textes secondaires */
-    --colorFooter: #0d0d0d;         /* footer très foncé pour hiérarchie visuelle */
-    --colorTextNavHover: #8ab4f8;   /* bleu doux pour survol, style Material Dark */
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -25,6 +6,7 @@
 body {
     font-family: "Oswald", sans-serif;
 }
+
 
 nav {
     text-transform: uppercase;
@@ -107,9 +89,6 @@ nav .contact:hover {
     color: var(--colorTextNavHover); /* couleur au survol */
 }
 
-.nav .toggle {
-    display: none;
-}
 
 
 
@@ -118,6 +97,7 @@ footer {
     background: var(--colorFooter);
     width: 100%;
     padding: 0px 20px;
+    bottom: 0;
 }
 
 footer .logo_reseaux img{
@@ -141,56 +121,95 @@ footer .logo_reseaux img:hover {
 .footerContacts .contacts {
     list-style: none;
 }
-.footerContacts .contacts .contact {
+.footerContacts .contacts .contact, .footerContacts .contacts .contact a {
     text-decoration: none;
+    color: var(--white);
+}
+
+
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.hamburger .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--colorText);
+    border-radius: 10px;
+}
+
+
+
+
+.voile {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%; 
+    width: 100px;
+    height: 200px;
+    background: var(--white);
+    border: solid 1px black;
+    z-index: 0;
+}
+
+.active {
+    display: block;
 }
 
 @media only screen and
 (max-width : 600px) and 
 (orientation : portrait) {
-    .nav .toggle {
+    .hamburger {
         display: flex;
-        background: none;
-        border: none;
-        font-size: 2.5rem;
-        font-weight: bold;
-        margin: 0px 10px;
     }
 
-    .nav .nav_bar1 img {
-        height: 1.7rem;
-    }
-
-
-.nav_bar {
+    .nav_bar1, .nav_bar2 {
+        display: none;
         flex-direction: column;
-        align-items: flex-start;
-        gap: 0;
         width: 100%;
-    }
-
-    .nav_links_responsive {
-        display: none; /* caché par défaut */
-        width: 100%;
-        padding: 10px 20px;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
         background-color: var(--colorNav);
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 10;
+        padding: 10px 0;
     }
 
-    .nav .toggle {
-        display: block;
-        font-size: 2rem;
-        background: none;
-        border: none;
-        margin-left: 20px;
-        cursor: pointer;
-    }
 
-    .nav_bar1 {
-        width: 100%;
+    .nav_bar1.active, .nav_bar2.active {
+        display: flex;
+
     }
 
     .nav_links {
-        width: 100%;
+        text-align: left;
+        padding: 10px 0;
     }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
 }

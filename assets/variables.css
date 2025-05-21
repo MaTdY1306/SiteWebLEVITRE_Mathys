@@ -1,0 +1,17 @@
+:root{
+    --white : #fff;
+    --colorText : #000000;
+    --colorNav : #d9d2c7;
+    --colorFont : f5f5dc;
+    --colorFooter : #262724;
+    --colorTextNavHover : #2C3E50;
+}
+
+.darkSide {
+    --white: #121212;               /* fond très sombre mais pas noir pur */
+    --colorText: #eaeaea;           /* texte presque blanc pour contraste doux */
+    --colorNav: #1f1f1f;            /* navigation plus foncée, neutre et discrète */
+    --colorFont: #c8c0a6;           /* beige/gris chaud adouci pour les textes secondaires */
+    --colorFooter: #0d0d0d;         /* footer très foncé pour hiérarchie visuelle */
+    --colorTextNavHover: #8ab4f8;   /* bleu doux pour survol, style Material Dark */
+}

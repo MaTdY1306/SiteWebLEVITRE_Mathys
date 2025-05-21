@@ -9,7 +9,18 @@ $(document).ready(function() {
         }
     })
 
-    $('.toggle').click(function () {
-        $('.nav_links_responsive').slideToggle(300);
+     $(".hamburger").click(function() {
+        $(".nav_bar1, .nav_bar2").toggleClass("active");
     });
+
+    $(".myImage").click(function() {
+        $(".voile").fadeIn();
+        $(".lightbox").fadeIn();
+    })
+
+    $(".voile").click(function() {
+        $(".voile").fadeOut();
+        $(".lightbox").fadeOut();
+    })
+
 })
