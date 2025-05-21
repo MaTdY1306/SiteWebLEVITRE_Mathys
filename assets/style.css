@@ -8,13 +8,11 @@
 }
 
 
-.principal {
+.premiereVue {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-
 
 .imagePortrait {
     position: relative;
@@ -23,7 +21,8 @@
     overflow: hidden;        /* cache ce qui dépasse */
     border-radius: 50%;      /* rend circulaire */
     margin: 100px;  
-    border: solid 1px black; /* bordure noire */
+    border: solid 1px black;
+    margin-top: 200px; /* bordure noire */
 }
 
 
@@ -38,11 +37,11 @@
     
 }
 .text h2 {
-    font-size: 30px;
+    font-size: 32px;
     text-transform: uppercase;
 }
 .text p {
-    font-size: 30px;
+    font-size: 32px;
     margin-bottom: 10px;
 }
 .text a button{
@@ -50,9 +49,44 @@
     padding: 10px 20px;
     transition: all .3s;
 }
+.text a button:first-child {
+    margin-right: 20px;
+}
 .text a button:hover{
     background-color: #2C3E50;
     color: white;
     transform: scale(1.1);
 }
 
+.presentation {
+    display: flex;
+    font-size: 20px;
+    word-wrap: break-word;
+    width: 1000px;
+    margin: 50px 0;
+}
+
+.ligneTemporelle {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 100px 0;
+}
+
+.ligneTemporelle .event {
+    width: 800px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.ligneTemporelle .event .allContent {
+    padding-left: 100px;
+    
+}
+
+/* .ligneTemporelle .event1::before{
+    content: "";
+    border: 50px solid black;
+    width: 0;
+    height: 0;
+} */
